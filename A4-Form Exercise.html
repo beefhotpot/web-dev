@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<div> 
+	<label for="fName">First Name:</label>
+	<input id="fName" type="text" name="firstName" placeholder="John" required>
+	<label for="lName">Last Name:</label>
+	<input id="lName" type="text" name="lastName" placeholder="Smith" required></div>
+	<div><label for="male">Male</label>
+		<input id="male" type="radio" name="gender" value="Male">
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="gender" value="Female">
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="gender" value="Other">
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" type="email" name="email" required="" placeholder="your email">
+		<label for="password">Passsword:</label>
+		<input id="password" type="password" name="password" placeholder="your password" required minlength="5" maxlength="10">
+		<!-- otherway to do this: -->
+		<!-- <input id="password" type="password" name="password" placeholder="your password" required pattern=".{5,10}" title="5 to 10 characters"> -->
+	</div>
+	<div>
+		<label for="birthday">Birthday:</label>
+		<select name="month">
+			<option>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+		</select>
+	</div>
+	<div>
+		<label for="approved">I agree to the terms and conditions</label>
+		<input id="approved" type="checkbox" name="approved" >
+	</div>
+	<div><button>Submit</button></div>
+</form>
+</body>
+</html>
